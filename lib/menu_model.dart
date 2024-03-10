@@ -22,7 +22,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Nasi Goreng',
     image: 'assets/images/nasi-goreng.jpg',
-    description: 'Nasi Goreng dengan khas yogyakarta. ',
+    description:
+        'Nasi goreng adalah hidangan yang terdiri dari nasi putih yang digoreng dengan berbagai bumbu dan bahan lainnya. Biasanya, nasi goreng dimasak dengan minyak goreng, bawang merah, bawang putih, cabai, dan kecap manis. Bahan lainnya yang sering ditambahkan adalah telur, ayam, udang, bakso, sosis, dan sayuran seperti sawi, kol, dan tomat.',
     price: 15000,
     location: 'Yogyakarta',
     rating: 4.5,
@@ -31,7 +32,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Ayam Goreng',
     image: 'assets/images/ayam-goreng.jpg',
-    description: 'Ayam goreng dengan pedas',
+    description:
+        'Ayam goreng adalah hidangan yang terdiri dari ayam yang digoreng dalam minyak goreng. Hidangan ini populer di seluruh dunia, dengan berbagai variasi bumbu dan cara pengolahan.',
     price: 20000,
     location: 'Bandung',
     rating: 3.5,
@@ -40,7 +42,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Ayam Bakar',
     image: 'assets/images/ayam-bakar.jpg',
-    description: 'Ayam bakar dengan pedas',
+    description:
+        'Ayam bakar adalah hidangan yang terdiri dari ayam yang dibakar di atas api. Hidangan ini populer di seluruh dunia, dengan berbagai variasi bumbu dan cara pengolahan.',
     price: 25000,
     location: 'Jakarta',
     rating: 5,
@@ -49,7 +52,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Rendang',
     image: 'assets/images/rendang.jpg',
-    description: 'Rendang dengan pedas',
+    description:
+        'Rendang adalah hidangan daging yang dimasak dengan santan dan rempah-rempah dalam waktu lama. Hidangan ini berasal dari Sumatera Barat, Indonesia, dan dianggap sebagai salah satu hidangan paling lezat di dunia.',
     price: 30000,
     location: 'Surabaya',
     rating: 4,
@@ -58,7 +62,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Sate',
     image: 'assets/images/sate.jpg',
-    description: 'Sate dengan pedas',
+    description:
+        'Sate adalah hidangan yang terdiri dari potongan daging yang ditusuk dengan tusukan sate, kemudian dibakar di atas api. Sate disajikan dengan berbagai macam bumbu yang bergantung pada variasi resep sate. Daging yang dijadikan sate antara lain daging ayam, kambing, domba, sapi, kelinci, dan ikan.',
     price: 35000,
     location: 'Malang',
     rating: 3,
@@ -67,7 +72,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Mie Ayam',
     image: 'assets/images/mie-ayam.jpg',
-    description: 'Mie Ayam dengan topping ayam panggang.',
+    description:
+        'Mie ayam adalah salah satu hidangan paling populer di Indonesia. Hidangan ini terbuat dari mie kuning yang direbus dan kemudian ditumis dengan bumbu kecap manis, bawang merah, bawang putih, dan sayuran seperti sawi dan caisim. Biasanya ditambahkan irisan daging ayam yang sudah dimasak dan dicincang.',
     price: 12000,
     location: 'Jakarta',
     rating: 4.2,
@@ -76,7 +82,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Soto Ayam',
     image: 'assets/images/soto-ayam.jpg',
-    description: 'Soto Ayam dengan kuah bening dan rempah-rempah.',
+    description:
+        'Soto ayam adalah hidangan berkuah kuning yang terbuat dari kaldu ayam, suwiran ayam, dan berbagai bumbu rempah. Hidangan ini populer di seluruh Indonesia dan menjadi salah satu kuliner khas Indonesia.',
     price: 13000,
     location: 'Surabaya',
     rating: 4.4,
@@ -85,7 +92,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Gado-gado',
     image: 'assets/images/gado-gado.jpg',
-    description: 'Gado-gado dengan bumbu kacang dan sayuran segar.',
+    description:
+        'Gado-gado adalah hidangan salad khas Indonesia yang terdiri dari berbagai macam sayuran rebus, seperti kacang panjang, bayam, kangkung, dan kubis. Sayuran ini kemudian dicampur dengan bumbu kacang yang gurih dan manis, dan ditaburi dengan kerupuk, bawang goreng, dan emping.',
     price: 11000,
     location: 'Bali',
     rating: 4.6,
@@ -94,7 +102,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Bakso',
     image: 'assets/images/bakso.jpg',
-    description: 'Bakso dengan kuah bening dan daging sapi.',
+    description:
+        'Bakso adalah hidangan bola daging yang terbuat dari daging giling (biasanya sapi), tepung tapioka, dan bumbu-bumbu. Bakso biasanya disajikan dalam kuah kaldu sapi yang gurih dan hangat, bersama dengan mie kuning, bihun, pangsit goreng, dan bakso goreng. Bakso sering dihidangkan dengan sambal, kecap manis, dan jeruk nipis.',
     price: 14000,
     location: 'Semarang',
     rating: 4.3,
@@ -103,16 +112,18 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Nasi Kuning',
     image: 'assets/images/nasi-kuning.jpg',
-    description: 'Nasi Kuning dengan lauk ayam dan telur.',
+    description:
+        'Nasi kuning adalah salah satu makanan khas Indonesia yang terkenal dengan warna kuning cantiknya dan cita rasanya yang gurih dan kaya. Hidangan ini seringkali disajikan pada acara-acara khusus seperti hajatan, syukuran, atau upacara adat. Namun, nasi kuning juga bisa dinikmati sebagai menu sarapan atau makan siang.',
     price: 16000,
     location: 'Medan',
     rating: 4.8,
     clock: '07.00 - 14.00',
   ),
   MenuModel(
-    name: 'Martabak',
+    name: 'Martabak Telur',
     image: 'assets/images/martabak.jpe',
-    description: 'Martabak manis dengan topping coklat dan keju.',
+    description:
+        'Martabak telur, juga dikenal sebagai martabak asin, adalah variasi martabak gurih yang terbuat dari adonan tepung terigu, telur, daging cincang, dan daun bawang. Adonan martabak telur dimasak di atas wajan datar dengan api kecil hingga matang dan berwarna kecoklatan. Martabak telur biasanya dipotong menjadi beberapa bagian dan disajikan dengan saus sambal dan acar.',
     price: 18000,
     location: 'Makassar',
     rating: 4.9,
@@ -121,7 +132,8 @@ List<MenuModel> menus = [
   MenuModel(
     name: 'Pisang Goreng',
     image: 'assets/images/pisang-goreng.jpg',
-    description: 'Pisang Goreng dengan taburan gula.',
+    description:
+        'Pisang goreng adalah makanan ringan yang banyak ditemukan di Indonesia, Malaysia dan Singapura. Makanan ini terbuat dari buah pisang yang telah di kupas kulitnya, kemudian dilumuri adonan tepung dan digoreng.',
     price: 8000,
     location: 'Padang',
     rating: 4.1,
