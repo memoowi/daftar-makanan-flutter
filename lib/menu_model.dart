@@ -139,4 +139,74 @@ List<MenuModel> menus = [
     rating: 4.1,
     clock: '14.00 - 21.00',
   ),
+  MenuModel(
+    name: 'Nasi Uduk',
+    image: 'assets/images/nasi-uduk.jpg',
+    description:
+        'Nasi uduk adalah nasi yang dimasak dengan santan, serai, daun pandan, dan garam. Hidangan ini biasa disajikan dengan berbagai lauk-pauk seperti ayam goreng, telur, tempe, dan sambal kacang.',
+    price: 14000,
+    location: 'Jakarta',
+    rating: 4.4,
+    clock: '07.00 - 14.00',
+  ),
+  MenuModel(
+    name: 'Pempek',
+    image: 'assets/images/pempek.jpeg',
+    description:
+        'Pempek adalah makanan khas Palembang yang terbuat dari campuran tepung ikan, tepung sagu, dan beberapa bahan lainnya. Pempek biasanya disajikan dengan kuah cuka yang dicampur dengan gula merah dan cabai.',
+    price: 22000,
+    location: 'Palembang',
+    rating: 4.6,
+    clock: '10.00 - 17.00',
+  ),
+  MenuModel(
+    name: 'Nasi Padang',
+    image: 'assets/images/nasi-padang.jpeg',
+    description:
+        'Nasi Padang adalah hidangan khas dari daerah Padang, Sumatera Barat. Hidangan ini terdiri dari nasi yang disajikan dengan berbagai lauk pauk seperti rendang, ayam goreng, dendeng balado, gulai daun singkong, dan sambal lado hijau.',
+    price: 25000,
+    location: 'Padang',
+    rating: 4.8,
+    clock: '08.00 - 15.00',
+  ),
+  MenuModel(
+    name: 'Ketoprak',
+    image: 'assets/images/ketoprak.jpg',
+    description:
+        'Ketoprak adalah salah satu makanan khas Betawi yang terdiri dari lontong, tauge, ketupat, bihun, dan taoge yang disiram dengan saus kacang dan disajikan dengan kerupuk.',
+    price: 12000,
+    location: 'Jakarta',
+    rating: 4.3,
+    clock: '11.00 - 18.00',
+  ),
+  MenuModel(
+    name: 'Lontong Sayur',
+    image: 'assets/images/lontong-sayur.jpeg',
+    description:
+        'Lontong sayur adalah hidangan khas Indonesia yang terdiri dari lontong (nasi yang dibungkus daun pisang dan direbus), sayuran (biasanya kacang panjang, daun singkong, daun melinjo, dan tauge), dan kuah santan yang gurih.',
+    price: 11000,
+    location: 'Bogor',
+    rating: 4.5,
+    clock: '07.00 - 14.00',
+  ),
+  MenuModel(
+    name: 'Kerak Telor',
+    image: 'assets/images/kerak-telor.jpg',
+    description:
+        'Kerak telor adalah makanan tradisional Betawi yang terbuat dari telur ayam, beras ketan, ebi (udang rebon), kelapa parut, dan bumbu-bumbu lainnya. Semua bahan tersebut dicampur dan digoreng dengan api kecil hingga matang.',
+    price: 16000,
+    location: 'Jakarta',
+    rating: 4.7,
+    clock: '16.00 - 23.00',
+  ),
+  MenuModel(
+    name: 'Pecel Lele',
+    image: 'assets/images/pecel-lele.jpeg',
+    description:
+        'Pecel lele adalah hidangan yang terbuat dari ikan lele yang digoreng kering dan disajikan dengan sambal dan lalapan. Hidangan ini populer di Indonesia, terutama di daerah Jawa.',
+    price: 18000,
+    location: 'Yogyakarta',
+    rating: 4.2,
+    clock: '14.00 - 21.00',
+  ),
 ];
