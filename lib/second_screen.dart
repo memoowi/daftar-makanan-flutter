@@ -18,13 +18,15 @@ class _SecondScreenState extends State<SecondScreen> {
       appBar: AppBar(
         toolbarHeight: 0.0,
       ),
-      body: LayoutBuilder(builder: (context, constraints) {
-        if (constraints.maxWidth > 600) {
-          return webView(context, constraints);
-        } else {
-          return mobileView(context);
-        }
-      }),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth > 600) {
+            return webView(context, constraints);
+          } else {
+            return mobileView(context);
+          }
+        },
+      ),
     );
   }
 
