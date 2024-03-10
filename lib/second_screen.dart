@@ -158,8 +158,22 @@ class _SecondScreenState extends State<SecondScreen> {
                 textAlign: TextAlign.center,
               ),
             ),
+            SizedBox(height: 20),
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                'Deskripsi :',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
               child: Text(
                 widget.menu.description,
                 style: TextStyle(
@@ -167,6 +181,7 @@ class _SecondScreenState extends State<SecondScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 20),
             Container(
               width: double.infinity,
               padding: EdgeInsets.all(20),
