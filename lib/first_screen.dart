@@ -38,6 +38,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   fontWeight: FontWeight.w700,
                 ),
               ),
+              SizedBox(height: 10),
               Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 color: Colors.blue,
