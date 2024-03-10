@@ -1,5 +1,6 @@
 import 'package:daftar_makanan/menu_model.dart';
 import 'package:daftar_makanan/widgets/menu_tile.dart';
+import 'package:daftar_makanan/widgets/menu_web_tile.dart';
 import 'package:flutter/material.dart';
 
 class FirstScreen extends StatefulWidget {
@@ -94,21 +95,74 @@ class _FirstScreenState extends State<FirstScreen> {
                 ),
               ),
               SizedBox(height: 10),
-              ListView.separated(
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                separatorBuilder: (context, index) => SizedBox(height: 10),
-                itemCount: _filteredMenu.length,
-                itemBuilder: (context, index) {
-                  return MenuTile(
-                    menu: _filteredMenu[index],
-                  );
-                },
-              ),
+              LayoutBuilder(builder: (context, constraints) {
+                if (constraints.maxWidth > 600) {
+                  return ListWeb(
+                      filteredMenu: _filteredMenu, constraint: constraints);
+                } else {
+                  return ListMobile(filteredMenu: _filteredMenu);
+                }
+              })
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class ListWeb extends StatelessWidget {
+  const ListWeb({
+    super.key,
+    required List<MenuModel> filteredMenu,
+    required this.constraint,
+  }) : _filteredMenu = filteredMenu;
+
+  final List<MenuModel> _filteredMenu;
+  final BoxConstraints constraint;
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      itemCount: _filteredMenu.length,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: constraint.maxWidth > 764 ? 4 : 3,
+        crossAxisSpacing: 20,
+        mainAxisSpacing: 20,
+        childAspectRatio: 0.7,
+        mainAxisExtent: 260,
+      ),
+      itemBuilder: (context, index) {
+        return MenuWebTile(
+          menu: _filteredMenu[index],
+        );
+      },
+    );
+  }
+}
+
+class ListMobile extends StatelessWidget {
+  const ListMobile({
+    super.key,
+    required List<MenuModel> filteredMenu,
+  }) : _filteredMenu = filteredMenu;
+
+  final List<MenuModel> _filteredMenu;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.separated(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      separatorBuilder: (context, index) => SizedBox(height: 10),
+      itemCount: _filteredMenu.length,
+      itemBuilder: (context, index) {
+        return MenuTile(
+          menu: _filteredMenu[index],
+        );
+      },
     );
   }
 }
